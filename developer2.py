@@ -29,7 +29,7 @@ async def on_message(message):
         i = (message.author.guild_permissions.administrator)
         if i is True:
             notice = message.content[4:]
-            channel = client.get_channel(886558700779765840)
+            channel = client.get_channel(892410210449248256)
             embed = discord.Embed(title="*공지*",description="\n와!\n\n{}샌즈\n\n".format(notice),timestamp=datetime.datetime.now(pytz.timezone('UTC')), color=0x00ff00)
             embed.set_footer(text="Bot Made by. ddoiy #7903 | 담당 관리자 : {}".format(message.author), icon_url="https://mblogthumb-phinf.pstatic.net/MjAxOTExMjlfMjk3/MDAxNTc1MDExNTQxMTI0.xeXU-B-yei3gz_Lg7UBeQ8Qg6ze8y_GDqcDEYg9v_OAg.bqWxqpZVi4h0U9uSPUvgiaFCWhn1JIch8uoZoIVxMWAg.PNG.elproy93/%EC%9E%89_%EC%95%97%EC%82%B4%EB%9D%BC%EB%A7%90%EB%9D%BC%EC%9D%B4%EC%BF%B0_%EB%9C%BB__01.PNG?type=w800")
             embed.set_thumbnail(url="https://mblogthumb-phinf.pstatic.net/MjAxOTExMjlfMjk3/MDAxNTc1MDExNTQxMTI0.xeXU-B-yei3gz_Lg7UBeQ8Qg6ze8y_GDqcDEYg9v_OAg.bqWxqpZVi4h0U9uSPUvgiaFCWhn1JIch8uoZoIVxMWAg.PNG.elproy93/%EC%9E%89_%EC%95%97%EC%82%B4%EB%9D%BC%EB%A7%90%EB%9D%BC%EC%9D%B4%EC%BF%B0_%EB%9C%BB__01.PNG?type=w800")
