@@ -9,21 +9,6 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if message.content.startswith ("~청소"):
-        i = (message.author.guild_permissions.administrator)
-
-        if i is True:
-            amount = message.content[4:]
-            await message.channel.purge(limit=1)
-            await message.channel.purge(limit=int(amount))
-            embed = discord.Embed(title="메시지 삭제 알림", description="디스코드 채팅 {}개가\n관리자 {}님의 요청으로 인해 삭제 되었습니다".format(amount, message.author), color=0x000000)
-            embed.set_footer(text="Bot Made by. ddoiy #7903", icon_url="https://discordapp.com/channels/691615852620939274/703908401381376000/711859989177958410")
-            await message.channel.send(embed=embed)
-
-        if i is False:
-            await message.channel.purge(limit=1)
-            await message.channel.send("{}, 당신은 명령어를 사용할 수 있는 권한이 없습니다.".format(message.author.mention))
-
     if message.content.startswith ("~공지"):
         await message.channel.purge(limit=1)
         i = (message.author.guild_permissions.administrator)
